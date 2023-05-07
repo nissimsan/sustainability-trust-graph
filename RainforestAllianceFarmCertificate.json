@@ -1,0 +1,48 @@
+{
+    "@context": [
+        "https://www.w3.org/2018/credentials/v1",
+        "https://vocabulary.uncefact.org/unece-context.jsonld",
+        {
+            "sustainability": "https://vocabulary.uncefact.org/sustainability/",
+            "deforestation": "sustainability:sustainable_harvesting",
+            "biodiversity": "sustainability:Biodiversity",
+            "regenerativeAggriculture": "sustainability:regeneration_of_tree_cover_after_logging_e_g_to_pre_harvesting_situation",
+            "indigenousCommunities": "sustainability:activities_not_adversely_affecting_local_communities_access_to_livelihoods",
+            "genderEquality": "sustainability:gender_policies_and_best_practices",
+            "workerRights": "sustainability:existence_of_publicly_available_policy_defining_workers_rights",
+            "childLabor": "sustainability:child_labour_legal_compliance_policy",
+            "livingWage": "sustainability:fair_and_timely_payment_of_wages",
+            "livingIncome": "sustainability:living_wage_based_on_sector_or_region_specificities"
+        }
+    ],
+    "type": "VerifiableCredential",
+    "issuer": {
+        "type": "Organization",
+        "id": "did:key:z6MktiSzqF9kqwdU8VkdBKx56EYzXfpgnNPUAGznpicNiWfn",
+        "name": "Rainforest Alliance"
+    },
+    "issuanceDate": "2023-05-03T15:20:00Z",
+    "credentialSubject": {
+        "type": "Organization",
+        "id": "did:web:ghana-cocoa-coop.example.com",
+        "name": "Ghana Cocoa Coop",
+        "applicableOrganizationalCertificate": {
+            "deforestation": true,
+            "biodiversity": true,
+            "regenerativeAggriculture": true,
+            "indigenousCommunities": true,
+            "genderEquality": true,
+            "workerRights": true,
+            "childLabor": true,
+            "livingWage": true,
+            "livingIncome": true
+        }
+    },
+    "proof": {
+        "type": "Ed25519Signature2018",
+        "created": "2023-05-07T20:46:16Z",
+        "verificationMethod": "did:key:z6MktiSzqF9kqwdU8VkdBKx56EYzXfpgnNPUAGznpicNiWfn#z6MktiSzqF9kqwdU8VkdBKx56EYzXfpgnNPUAGznpicNiWfn",
+        "proofPurpose": "assertionMethod",
+        "jws": "eyJhbGciOiJFZERTQSIsImI2NCI6ZmFsc2UsImNyaXQiOlsiYjY0Il19..rijhjalnD0pjf8xU0UROH2AXDud0eVoYvJcbvdre3bMCs_U-D9R6zVDzduXBffVV7CbXz_zpsrf583diA1WpBg"
+    }
+}
